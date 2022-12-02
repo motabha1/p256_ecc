@@ -1,0 +1,3 @@
+g++ ./main.cpp ./test/field_arithmetic_test.cpp ./src/ec_arithmetic.cpp ./src/field_arithmetic.cpp ./src/utility.cpp
+
+./a.out

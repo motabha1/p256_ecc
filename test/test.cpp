@@ -1,6 +1,6 @@
 #include "../src/utility.h"
 #include "../src/field_arithmetic.h"
-#include "field_arithmetic_test.h"
+#include "test.h"
 #include "../src/ec_arithmetic.h"
 
 #include <iostream>

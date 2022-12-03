@@ -38,3 +38,9 @@ cd p256_ecc
 ```
 
 ## References
+
+> Darrel Hankerson, Alfred J. Menezes, and Scott Vanstone. 2010. Guide to Elliptic Curve Cryptography (1st. ed.). Springer Publishing Company, Incorporated
+
+> [https://kel.bz/post/sage-p256/](https://kel.bz/post/sage-p256/)
+
+> Adalier, M., & Teknik, A. (2015). Efficient and Secure Elliptic Curve Cryptography Implementation of Curve P-256.

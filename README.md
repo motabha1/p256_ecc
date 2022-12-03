@@ -18,9 +18,9 @@
 ## Organisation
 
 | File  | Description |
-| :---: | :---:-------|
+| :---: | :---:       |
 | utility | contains parameters, utility functions |
-| field_arithmetic | contains add, subtract, multiply, mod and power methods that perform operations in F_p |
+| field_arithmetic | contains arithmetic operations in F_p |
 | ec_arithmetic | contains arithmetic over points of Elliptic curve | 
 | test | file that tests all the functionalities |
 | main | runner function that can test the functionalities | 
@@ -30,9 +30,11 @@
 This file for now contains only the code to test the functionality
 If you want to exchange a secret given private key inputs, that can be easily added by changing the test_field() method in the test.cpp to output the shared secret instead of simply checking the validity. 
 
-'''
+```
 git clone https://github.com/motabha1/p256_ecc.git
 cd p256_ecc
 ./run
 
-'''
+```
+
+## References

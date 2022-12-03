@@ -55,6 +55,12 @@ int_256 PROD2 = {
      0x498a9022, 0x979369fe, 0x82149139, 0x50f47bad, 0x55df5d58},
     10};
 
+/**
+ * @brief Flips the bits of a 256-bit number 
+ * A utility function for two's complement
+ * @param a 
+ * @return int_256 
+ */
 int_256 flip_bits(int_256 a)
 {
     int sz = a.size;
@@ -65,6 +71,13 @@ int_256 flip_bits(int_256 a)
     return a;
 }
 
+/**
+ * @brief Compares two 256-bit integers 
+ * @param a 
+ * @param b 
+ * @return true 
+ * @return false 
+ */
 bool is_greater(int_256 a, int_256 b)
 {
     int sz = a.size;
@@ -80,6 +93,14 @@ bool is_greater(int_256 a, int_256 b)
     return true;
 }
 
+/**
+ * @brief Checks whether two 256-bit integers are equal
+ * This function is used as a subroutine for comparing if two points on elliptic curve are equal or not
+ * @param a 
+ * @param b 
+ * @return true 
+ * @return false 
+ */
 bool is_equal(int_256 a, int_256 b)
 {
     int sz = a.size;
@@ -89,9 +110,4 @@ bool is_equal(int_256 a, int_256 b)
             return false;
     }
     return true;
-}
-
-int get_ith_bit(int a, int i)
-{
-    return (a >> i) & 1;
 }

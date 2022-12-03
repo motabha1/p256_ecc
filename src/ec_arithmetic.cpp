@@ -9,10 +9,27 @@
 
 #include "ec_arithmetic.h"
 
+/**
+ * @brief This function checks whether two points on curve are equal by comparing
+ * their X and Y coordinates
+ * 
+ * @param p 
+ * @param q 
+ * @return true 
+ * @return false 
+ */
 bool pt_equal(curve_pt p, curve_pt q){
     return is_equal(p.X, q.X) && is_equal(p.Y, q.Y);
 }
 
+
+/**
+ * @brief This function simply computer point addition
+ * P + Q where P and Q are points on the EC P-256
+ * @param p 
+ * @param q 
+ * @return curve_pt 
+ */
 curve_pt add(curve_pt p, curve_pt q)
 {
     int_256 lambda;
@@ -47,6 +64,13 @@ curve_pt add(curve_pt p, curve_pt q)
     return res;
 }
 
+/**
+ * @brief This function computes the value of mP where 
+ * m is the 256-bit scalar in F_p and P is the point on the curve
+ * @param p 
+ * @param alpha 
+ * @return curve_pt 
+ */
 curve_pt scalar_mul(curve_pt p, int_256 alpha)
 {
     curve_pt q = p, res;
